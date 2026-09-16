@@ -60,7 +60,7 @@
         width: 40px;
         height: 40px;
         background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
-        border: 2px solid #000;
+        border: 2px solid #fff;
         border-radius: 50%;
         cursor: pointer;
         position: relative;
