@@ -139,7 +139,7 @@ try {
             continue;
         }
 
-        $vid['url'] = 'https://illuminatetube.gt.tc/users/videos/' . basename($vid['url']);
+        $vid['url'] = 'https://pocketapptube.ct.ws/users/videos/' . basename($vid['url']);
         $videos[] = $vid;
     }
 
