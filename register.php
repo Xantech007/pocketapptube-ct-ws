@@ -87,10 +87,10 @@ $detected_country = detectCountryFromIp();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register for Illuminate Tube to start earning rewards and accessing exclusive vault archives. Create your initiate account today!">
-    <meta name="keywords" content="Illuminate Tube, register, initiate account, earn rewards, vault access, passive income">
-    <meta name="author" content="Illuminate Tube">
-    <title>Illuminate Tube - Register</title>
+    <meta name="description" content="Register for PocketApp Tube to start earning rewards and accessing exclusive vault archives. Create your initiate account today!">
+    <meta name="keywords" content="PocketApp Tube, register, initiate account, earn rewards, vault access, passive income">
+    <meta name="author" content="PocketApp Tube">
+    <title>PocketApp Tube - Register</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -113,13 +113,13 @@ $detected_country = detectCountryFromIp();
         }
         .hero-section {
             background: linear-gradient(135deg, #000000, #1a1a1a);
-            color: #ffd700;
+            color: #6f3ef2;
             text-align: center;
             padding: 100px 20px;
             position: relative;
             overflow: hidden;
             z-index: 10;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #6f3ef2;
         }
         .hero-section::before {
             content: '';
@@ -128,7 +128,7 @@ $detected_country = detectCountryFromIp();
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://source.unsplash.com/random/1920x1080/?gold,dark') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1920x1080/?purple,dark') no-repeat center center/cover;
             opacity: 0.15;
             z-index: 0;
         }
@@ -138,8 +138,8 @@ $detected_country = detectCountryFromIp();
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            color: #d4af37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            color: #6f3ef2;
+            text-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
         }
         .hero-section p {
             font-size: 18px;
@@ -158,7 +158,7 @@ $detected_country = detectCountryFromIp();
         .section-title {
             font-size: 36px;
             font-weight: 600;
-            color: #d4af37;
+            color: #6f3ef2;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -175,7 +175,7 @@ $detected_country = detectCountryFromIp();
         .register-content h2 {
             font-size: 28px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 10px;
         }
         .register-content p {
@@ -184,7 +184,7 @@ $detected_country = detectCountryFromIp();
             margin-bottom: 20px;
         }
         .register-content p span {
-            color: #ffd700;
+            color: #6f3ef2;
             font-weight: 600;
         }
         .input-field, .country-select {
@@ -202,12 +202,12 @@ $detected_country = detectCountryFromIp();
         }
         .country-select {
             appearance: none;
-            background: #0d0d0d url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23d4af37" d="M6 8.5L0 2.5h12z"/></svg>') no-repeat right 15px center;
+            background: #0d0d0d url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%236f3ef2" d="M6 8.5L0 2.5h12z"/></svg>') no-repeat right 15px center;
             background-size: 12px;
         }
         .input-field:focus, .country-select:focus {
-            border-color: #d4af37;
-            box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+            border-color: #6f3ef2;
+            box-shadow: 0 0 8px rgba(111, 62, 242, 0.4);
         }
         .gender-options {
             display: flex;
@@ -226,7 +226,7 @@ $detected_country = detectCountryFromIp();
         .gender-options input[type="radio"] {
             width: 18px;
             height: 18px;
-            accent-color: #ffd700;
+            accent-color: #6f3ef2;
         }
         .btn {
             padding: 12px 30px;
@@ -239,8 +239,8 @@ $detected_country = detectCountryFromIp();
             display: inline-block;
         }
         .submit-btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             border: none;
             border-radius: 25px;
             padding: 15px;
@@ -251,9 +251,9 @@ $detected_country = detectCountryFromIp();
             transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
         }
         .submit-btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: translateY(-2px);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.4);
         }
         .login-link {
             font-size: 14px;
@@ -261,7 +261,7 @@ $detected_country = detectCountryFromIp();
             margin-top: 20px;
         }
         .login-link a {
-            color: #ffd700;
+            color: #6f3ef2;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -272,23 +272,23 @@ $detected_country = detectCountryFromIp();
         }
         .cta-banner {
             background: linear-gradient(135deg, #1a1a1a, #000000);
-            border: 1px solid #d4af37;
+            border: 1px solid #6f3ef2;
             color: #fff;
             text-align: center;
             padding: 60px 20px;
             border-radius: 15px;
             margin: 40px 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 20px rgba(111, 62, 242, 0.2);
         }
         .cta-banner h2 {
             font-size: 32px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
         .cta-banner .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: 700;
@@ -298,9 +298,9 @@ $detected_country = detectCountryFromIp();
             display: inline-block;
         }
         .cta-banner .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
         .notice {
             position: fixed;
@@ -308,7 +308,7 @@ $detected_country = detectCountryFromIp();
             left: 50%;
             transform: translate(-50%, -50%);
             background: #141414;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
             padding: 30px;
@@ -320,7 +320,7 @@ $detected_country = detectCountryFromIp();
         }
         .notice h2 {
             font-size: 24px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 15px;
         }
         .notice p {
@@ -339,11 +339,11 @@ $detected_country = detectCountryFromIp();
             transition: color 0.3s ease;
         }
         .close-btn:hover {
-            color: #ffd700;
+            color: #6f3ef2;
         }
         .notice .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -353,9 +353,9 @@ $detected_country = detectCountryFromIp();
             display: inline-block;
         }
         .notice .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
         @media (max-width: 1024px) {
             .hero-section h1 { font-size: 36px; }
@@ -395,7 +395,7 @@ $detected_country = detectCountryFromIp();
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Join Illuminate Tube</h1>
+        <h1>Join PocketApp Tube</h1>
         <p>Create your initiate account to start accessing vault archives and earn rewards across our secure platform.</p>
     </section>
 
@@ -403,7 +403,7 @@ $detected_country = detectCountryFromIp();
     <div class="index-container">
         <h2 class="section-title">Initiate Registration</h2>
         <div class="register-content">
-            <h2>Register for <span>Illuminate Tube</span></h2>
+            <h2>Register for <span>PocketApp Tube</span></h2>
             <p>Fill in your details to get started</p>
             <form id="register-form" method="POST">
                 <input type="text" id="name" name="name" class="input-field" placeholder="Full Name" required>
@@ -430,14 +430,14 @@ $detected_country = detectCountryFromIp();
 
     <!-- CTA Banner -->
     <section class="cta-banner">
-        <h2>Start Your Journey with Illuminate Tube</h2>
+        <h2>Start Your Journey with PocketApp Tube</h2>
         <a href="register.php" class="btn">Join Now</a>
     </section>
 
     <!-- Notice Popup -->
     <div class="notice" id="notice">
         <span class="close-btn" onclick="closeNotice()" aria-label="Close notice">×</span>
-        <h2>Join Illuminate Tube Today</h2>
+        <h2>Join PocketApp Tube Today</h2>
         <p>Unlock exclusive vault access and system privileges. Register now and begin your initiation!</p>
         <a href="register.php" class="btn">Get Started</a>
     </div>
@@ -448,7 +448,7 @@ $detected_country = detectCountryFromIp();
     <script>
         window.__lc = window.__lc || {};
         window.__lc.license = 15808029;
-        (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0;n.type="text/javascript";n.src="https://cdn.livechat.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+        (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0;n.type="text/javascript";n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
     </script>
     <noscript><a href="https://www.livechat.com/chat-with/15808029/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 
