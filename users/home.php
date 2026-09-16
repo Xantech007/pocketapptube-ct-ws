@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $v_id = intval($_POST['video_id']);
     $user_id = $_SESSION['user_id'];
 
-    // Verify if already watched in DB or session
     try {
         $check_stmt = $pdo->prepare("SELECT id FROM activities WHERE user_id = ? AND video_id = ? AND action LIKE 'Watched%'");
         $check_stmt->execute([$user_id, $v_id]);
@@ -35,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             exit;
         }
 
-        // Fetch reward amount to prevent manipulation from front-end
         $vid_stmt = $pdo->prepare("SELECT reward FROM videos WHERE id = ?");
         $vid_stmt->execute([$v_id]);
         $video_data = $vid_stmt->fetch(PDO::FETCH_ASSOC);
@@ -49,20 +47,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
         $pdo->beginTransaction();
 
-        // 1. Update user balance in Database
         $update_balance = $pdo->prepare("UPDATE users SET balance = balance + ? WHERE id = ?");
         $update_balance->execute([$reward, $user_id]);
 
-        // 2. Log activity and saved earned amount to prevent double rewards on refresh
         $log_activity = $pdo->prepare("INSERT INTO activities (user_id, video_id, action, amount, created_at) VALUES (?, ?, ?, ?, NOW())");
         $log_activity->execute([$user_id, $v_id, 'Watched video #' . $v_id, $reward]);
 
         $pdo->commit();
 
-        // 3. Update session tracking
         $_SESSION['watched_videos'][] = $v_id;
 
-        // Fetch new updated balance
         $bal_stmt = $pdo->prepare("SELECT balance FROM users WHERE id = ?");
         $bal_stmt->execute([$user_id]);
         $new_balance = floatval($bal_stmt->fetchColumn());
@@ -106,7 +100,6 @@ try {
     $upgrade_status = $user['upgrade_status'] ?? 'not_upgraded';
     $user_country = htmlspecialchars($user['country']);
 
-    // Generate account status badge for user profile
     if (strtolower($verification_status) === 'verified') {
         $account_status_badge = '<span class="status-tag status-verified"><i class="fa-solid fa-circle-check"></i> Account Verified</span>';
     } elseif (strtolower($upgrade_status) === 'upgraded') {
@@ -124,28 +117,7 @@ try {
     exit;
 }
 
-// Helper function to check URL reachability
-function url_exists($url) {
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_NOBODY, true);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_exec($ch);
-    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $error = curl_error($ch);
-    curl_close($ch);
-    
-    if ($code !== 200) {
-        return ['status' => false, 'error' => "HTTP $code - $error"];
-    }
-    return ['status' => true];
-}
-
-// Fetch up to 10 videos excluding both DB activities and current session watched videos
+// Fetch up to 10 videos directly (cURL url_exists check removed to prevent PHP render delay)
 $videos = [];
 $video_error = null;
 
@@ -163,17 +135,12 @@ try {
     $fetched_videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($fetched_videos as $vid) {
-        // Exclude session watched videos as well
         if (in_array($vid['id'], $_SESSION['watched_videos'])) {
             continue;
         }
 
-        $full_url = 'https://illuminatetube.gt.tc/users/videos/' . basename($vid['url']);
-        $url_check = url_exists($full_url);
-        if ($url_check['status']) {
-            $vid['url'] = $full_url;
-            $videos[] = $vid;
-        }
+        $vid['url'] = 'https://illuminatetube.gt.tc/users/videos/' . basename($vid['url']);
+        $videos[] = $vid;
     }
 
     if (empty($videos)) {
@@ -302,6 +269,37 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        /* Loading Spinner Overlay */
+        .video-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        .video-loader .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid var(--accent-color);
+            border-radius: 50%;
+            animation: spin 0.9s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         /* Countdown overlay banner */
@@ -563,6 +561,11 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
         <?php if (!empty($videos)): ?>
             <?php foreach ($videos as $index => $vid): ?>
                 <div class="video-card" data-index="<?php echo $index; ?>" id="video-card-<?php echo $vid['id']; ?>">
+                    <div class="video-loader">
+                        <div class="spinner"></div>
+                        <span>Loading video...</span>
+                    </div>
+
                     <div class="reward-countdown-banner">
                         <i class="fa-solid fa-stopwatch" style="color: #4ade80;"></i>
                         Reward in: <span class="timer-display">--s</span>
@@ -572,10 +575,10 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
                         class="feed-video" 
                         playsinline 
                         muted
-                        preload="<?php echo $index === 0 ? 'auto' : 'metadata'; ?>"
+                        preload="none"
+                        data-src="<?php echo htmlspecialchars($vid['url']); ?>"
                         data-video-id="<?php echo $vid['id']; ?>" 
                         data-reward="<?php echo $vid['reward']; ?>">
-                        <source src="<?php echo htmlspecialchars($vid['url']); ?>" type="video/mp4">
                     </video>
 
                     <!-- Side Action Buttons -->
@@ -645,19 +648,52 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
             }
         }
 
-        function pauseAllVideos() {
-            document.querySelectorAll('.feed-video').forEach(vid => {
-                vid.muted = true;
-                vid.pause();
-            });
+        function stopAndUnloadVideo(video) {
+            if (!video) return;
+            video.muted = true;
+            video.pause();
+            
+            // Clean source to stop downloading & free browser memory
+            if (video.src) {
+                video.removeAttribute('src');
+                video.load();
+            }
         }
 
-        function playActiveVideo(video) {
-            pauseAllVideos();
-            if (video) {
+        function loadAndPlayVideo(video) {
+            const card = video.closest('.video-card');
+            const loader = card.querySelector('.video-loader');
+            const dataSrc = video.getAttribute('data-src');
+
+            if (!dataSrc) return;
+
+            // Show loader until ready to play
+            if (loader) loader.style.display = 'flex';
+
+            // Assign src only when actively focused
+            if (!video.src || video.src !== dataSrc) {
+                video.src = dataSrc;
+                video.load();
+            }
+
+            const hideLoaderAndPlay = () => {
+                if (loader) loader.style.display = 'none';
                 video.muted = false;
                 video.play().catch(err => console.log('Autoplay prevented:', err));
+            };
+
+            // If already loaded enough to play immediately
+            if (video.readyState >= 3) {
+                hideLoaderAndPlay();
+            } else {
+                video.addEventListener('canplay', hideLoaderAndPlay, { once: true });
             }
+        }
+
+        function pauseAllVideos() {
+            document.querySelectorAll('.feed-video').forEach(vid => {
+                stopAndUnloadVideo(vid);
+            });
         }
 
         function scrollToNextVideo(card) {
@@ -669,7 +705,7 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
             }
         }
 
-        // IntersectionObserver for active video playing & pausing inactive videos
+        // IntersectionObserver: Ensures strictly ONE video loads and plays at a time
         const observerOptions = {
             root: feed,
             threshold: 0.6
@@ -681,10 +717,9 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
                 if (!video) return;
 
                 if (entry.isIntersecting) {
-                    playActiveVideo(video);
+                    loadAndPlayVideo(video);
                 } else {
-                    video.muted = true;
-                    video.pause();
+                    stopAndUnloadVideo(video);
                 }
             });
         }, observerOptions);
@@ -696,7 +731,6 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
             const card = video.closest('.video-card');
             const timerDisplay = card.querySelector('.timer-display');
 
-            // Dynamic live time update display
             video.addEventListener('timeupdate', function() {
                 if (video.duration) {
                     const remaining = Math.ceil(video.duration - video.currentTime);
@@ -706,7 +740,7 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
 
             video.addEventListener('click', function() {
                 if (video.paused) {
-                    playActiveVideo(video);
+                    video.play().catch(err => console.log('Autoplay prevented:', err));
                 } else {
                     video.pause();
                 }
@@ -743,7 +777,6 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
                     dataType: 'json',
                     success: function(response) {
                         if (response.status === 'success') {
-                            // Update total user balance UI dynamically
                             document.getElementById('balance').textContent = response.new_balance;
 
                             Swal.fire({
@@ -754,8 +787,8 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
                                 showConfirmButton: false
                             });
 
-                            // Smoothly fade out and remove watched video card from view
                             $(card).fadeOut(400, function() {
+                                stopAndUnloadVideo(video);
                                 card.remove();
                                 checkEmptyFeed();
                             });
@@ -784,7 +817,7 @@ $error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : null
             });
         });
 
-        // Pause sound when changing page focus
+        // Pause sound and unload video when tab is hidden
         document.addEventListener('visibilitychange', function() {
             if (document.hidden) {
                 pauseAllVideos();
