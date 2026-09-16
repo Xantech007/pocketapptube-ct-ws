@@ -7,10 +7,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Read the Terms and Conditions for using Illuminate Tube. Understand our policies for account registration, initiate privileges, vault access, and platform rules.">
-    <meta name="keywords" content="Illuminate Tube, terms and conditions, user agreement, initiate access, vault security, policies">
-    <meta name="author" content="Illuminate Tube">
-    <title>Illuminate Tube - Terms and Conditions</title>
+    <meta name="description" content="Read the Terms and Conditions for using PocketApp Tube. Understand our policies for account registration, initiate privileges, vault access, and platform rules.">
+    <meta name="keywords" content="PocketApp Tube, terms and conditions, user agreement, initiate access, vault security, policies">
+    <meta name="author" content="PocketApp Tube">
+    <title>PocketApp Tube - Terms and Conditions</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -36,13 +36,13 @@
         /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #000000, #1a1a1a);
-            color: #ffd700;
+            color: #6f3ef2;
             text-align: center;
             padding: 100px 20px;
             position: relative;
             overflow: hidden;
             z-index: 10;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #6f3ef2;
         }
 
         .hero-section::before {
@@ -52,7 +52,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://source.unsplash.com/random/1920x1080/?gold,dark') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1920x1080/?purple,dark') no-repeat center center/cover;
             opacity: 0.15;
             z-index: 0;
         }
@@ -63,8 +63,8 @@
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            color: #d4af37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            color: #6f3ef2;
+            text-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
         }
 
         .hero-section p {
@@ -87,7 +87,7 @@
         .section-title {
             font-size: 36px;
             font-weight: 600;
-            color: #d4af37;
+            color: #6f3ef2;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -106,7 +106,7 @@
         .terms-content h1 {
             font-size: 28px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -114,7 +114,7 @@
         .terms-content h2 {
             font-size: 20px;
             font-weight: 500;
-            color: #ffd700;
+            color: #6f3ef2;
             margin: 25px 0 10px;
         }
 
@@ -126,12 +126,12 @@
         }
 
         .terms-content p span {
-            color: #ffd700;
+            color: #6f3ef2;
             font-weight: 600;
         }
 
         .terms-content a {
-            color: #ffd700;
+            color: #6f3ef2;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -150,7 +150,7 @@
         }
 
         .back-link a {
-            color: #ffd700;
+            color: #6f3ef2;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -164,25 +164,25 @@
         /* CTA Banner */
         .cta-banner {
             background: linear-gradient(135deg, #1a1a1a, #000000);
-            border: 1px solid #d4af37;
+            border: 1px solid #6f3ef2;
             color: #fff;
             text-align: center;
             padding: 60px 20px;
             border-radius: 15px;
             margin: 40px 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 20px rgba(111, 62, 242, 0.2);
         }
 
         .cta-banner h2 {
             font-size: 32px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
         .cta-banner .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: 700;
@@ -193,9 +193,9 @@
         }
 
         .cta-banner .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Notice Popup */
@@ -205,7 +205,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #141414;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
             padding: 30px;
@@ -218,7 +218,7 @@
 
         .notice h2 {
             font-size: 24px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 15px;
         }
 
@@ -240,12 +240,12 @@
         }
 
         .close-btn:hover {
-            color: #ffd700;
+            color: #6f3ef2;
         }
 
         .notice .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -256,9 +256,9 @@
         }
 
         .notice .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Responsive Design */
@@ -385,7 +385,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <h1>Terms and Conditions</h1>
-        <p>Understand the rules and governance for using Illuminate Tube to ensure a secure and synchronized initiate experience.</p>
+        <p>Understand the rules and governance for using PocketApp Tube to ensure a secure and synchronized initiate experience.</p>
     </section>
 
     <!-- Terms Content -->
@@ -393,25 +393,25 @@
         <h2 class="section-title">Our Terms</h2>
         <div class="terms-content">
             <h1>Terms and Conditions</h1>
-            <p>Welcome to <span>Illuminate Tube</span>. By accessing our platform and private archives, you agree to strictly comply with and be bound by the following terms and conditions. Please review them carefully.</p>
+            <p>Welcome to <span>PocketApp Tube</span>. By accessing our platform and private archives, you agree to strictly comply with and be bound by the following terms and conditions. Please review them carefully.</p>
 
             <h2>1. Acceptance of Terms</h2>
-            <p>By entering or utilizing Illuminate Tube, you affirm your full acceptance of these Terms and Conditions and our <a href="privacy.php">Privacy Policy</a>. If you do not agree to these protocols, access to our platform is prohibited.</p>
+            <p>By entering or utilizing PocketApp Tube, you affirm your full acceptance of these Terms and Conditions and our <a href="privacy.php">Privacy Policy</a>. If you do not agree to these protocols, access to our platform is prohibited.</p>
 
             <h2>2. Initiate Registration & Security</h2>
             <p>To access vault archives and earn rewards, initiates must register with a valid email and a 5-digit security passcode. You maintain complete responsibility for safeguarding your initiate credentials and vault key.</p>
 
             <h2>3. Authorized Usage</h2>
-            <p>You agree to access Illuminate Tube exclusively for authorized, lawful purposes. You are strictly prohibited from utilizing our network for unauthorized exploitation, automated abuse, or violating community protocols.</p>
+            <p>You agree to access PocketApp Tube exclusively for authorized, lawful purposes. You are strictly prohibited from utilizing our network for unauthorized exploitation, automated abuse, or violating community protocols.</p>
 
             <h2>4. Protocol Conduct & Vault Integrity</h2>
             <p>Attempts to breach, manipulate, reverse-engineer, or misuse our platform systems are strictly forbidden. Any unauthorized entry or security interference will result in immediate initiate suspension and access revocation.</p>
 
             <h2>5. Access Revocation & Termination</h2>
-            <p>Illuminate Tube reserves the right to suspend or terminate initiate profiles, revoke vault access, or withhold rewards if non-compliance or prohibited actions are detected.</p>
+            <p>PocketApp Tube reserves the right to suspend or terminate initiate profiles, revoke vault access, or withhold rewards if non-compliance or prohibited actions are detected.</p>
 
             <h2>6. Revisions & Updates</h2>
-            <p>We reserve the right to modify these Terms and Conditions at any time. Continued usage of Illuminate Tube following protocol updates signifies your implicit agreement to the updated terms.</p>
+            <p>We reserve the right to modify these Terms and Conditions at any time. Continued usage of PocketApp Tube following protocol updates signifies your implicit agreement to the updated terms.</p>
 
             <h2>7. Contact Operations</h2>
             <p>If you require clarification regarding these terms, please contact our elite support team via our <a href="contact.php">Contact page</a>.</p>
@@ -422,14 +422,14 @@
 
     <!-- CTA Banner -->
     <section class="cta-banner">
-        <h2>Join Illuminate Tube Today</h2>
+        <h2>Join PocketApp Tube Today</h2>
         <a href="register.php" class="btn" onclick="console.log('CTA button clicked')">Get Started</a>
     </section>
 
     <!-- Notice Popup -->
     <div class="notice" id="notice">
         <span class="close-btn" onclick="closeNotice()" aria-label="Close notice">×</span>
-        <h2>Welcome to Illuminate Tube</h2>
+        <h2>Welcome to PocketApp Tube</h2>
         <p>Review our Terms and Conditions to understand your initiate privileges and platform guidelines. Ready to unlock exclusive vault rewards?</p>
         <a href="register.php" class="btn" onclick="console.log('Notice button clicked')">Sign Up Now</a>
     </div>
@@ -440,7 +440,7 @@
     <script>
         window.__lc = window.__lc || {};
         window.__lc.license = 15808029;
-        (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechat.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+        (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
     </script>
     <noscript><a href="https://www.livechat.com/chat-with/15808029/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 
