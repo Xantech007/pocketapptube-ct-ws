@@ -1,7 +1,7 @@
 <?php
 
 // Remote video directory
-$remoteURL = "https://illumatetube.gt.tc/vid/";
+$remoteURL = "https://pocketapptube.ct.ws/vid/";
 
 // Local folder (must exist and be writable)
 $localFolder = __DIR__ . "/users/videos/";
