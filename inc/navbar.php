@@ -33,10 +33,10 @@
         transition: color 0.3s ease;
     }
     .ham-menu ul li a:hover {
-        color: #ffd700;
+        color: #6f3ef2;
     }
     .ham-menu ul li.active a {
-        color: #d4af37;
+        color: #6f3ef2;
         font-weight: 600;
     }
 
