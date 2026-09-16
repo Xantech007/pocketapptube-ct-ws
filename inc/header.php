@@ -6,7 +6,7 @@
     <div class="header-container">
         <div class="logo">
             <a href="index.php">
-                <img src="img/palmpay.webp" alt="Illuminate Tube Logo">
+                <img src="img/palmpay.webp" alt="PocketApp Tube Logo">
             </a>
         </div>
         <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button">
@@ -59,7 +59,7 @@
     .hamburger-menu-button {
         width: 40px;
         height: 40px;
-        background: linear-gradient(45deg, #d4af37, #ffd700);
+        background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
         border: 2px solid #000;
         border-radius: 50%;
         cursor: pointer;
@@ -67,13 +67,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        box-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
     }
 
     .hamburger-menu-button span {
         width: 20px;
         height: 2px;
-        background: #000;
+        background: #fff;
         position: absolute;
         transition: all 0.3s ease;
     }
@@ -83,7 +83,7 @@
         content: '';
         width: 20px;
         height: 2px;
-        background: #000;
+        background: #fff;
         position: absolute;
         transition: all 0.3s ease;
     }
@@ -113,7 +113,7 @@
         top: 20px;
         right: 20px;
         background: linear-gradient(135deg, #141414, #1a1a1a);
-        border: 1px solid #d4af37;
+        border: 1px solid #6f3ef2;
         border-radius: 12px;
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
         padding: 15px 20px;
@@ -145,7 +145,7 @@
     .notification-content i {
         margin-right: 12px;
         font-size: 18px;
-        color: #ffd700;
+        color: #6f3ef2;
     }
 
     @media (max-width: 768px) {
