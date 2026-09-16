@@ -2,7 +2,7 @@
 // footer.php
 ?>
 <footer id="footer">
-    <p>&copy; <?php echo date("Y"); ?> Illuminate Tube. All rights reserved.</p>
+    <p>&copy; <?php echo date("Y"); ?> PocketApp Tube. All rights reserved.</p>
 </footer>
 
 <style>
@@ -30,7 +30,7 @@
 
     footer p {
         margin: 0;
-        color: #d4af37;
+        color: #6f3ef2;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.5px;
