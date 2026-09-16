@@ -21,8 +21,8 @@ try {
 
 // Fallback in case table/record is not set yet
 if (empty($telegram_raw)) {
-    $telegram_raw = '@IlluminateTubeSupport';
-    $telegram_clean = 'IlluminateTubeSupport';
+    $telegram_raw = '@PocketAppTubeSupport';
+    $telegram_clean = 'PocketAppTubeSupport';
 }
 ?>
 
@@ -31,10 +31,10 @@ if (empty($telegram_raw)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Illuminate Tube's elite support team 24/7 via Telegram for assistance with your account, login, or secret archive inquiries.">
-    <meta name="keywords" content="Illuminate Tube, contact support, Illuminati videos, elite rewards, crypto payouts, customer service">
-    <meta name="author" content="Illuminate Tube">
-    <title>Illuminate Tube - Contact Us</title>
+    <meta name="description" content="Contact PocketApp Tube's elite support team 24/7 via Telegram for assistance with your account, login, or secret archive inquiries.">
+    <meta name="keywords" content="PocketApp Tube, contact support, secret videos, elite rewards, crypto payouts, customer service">
+    <meta name="author" content="PocketApp Tube">
+    <title>PocketApp Tube - Contact Us</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -59,13 +59,13 @@ if (empty($telegram_raw)) {
         /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #000000, #1a1a1a);
-            color: #ffd700;
+            color: #6f3ef2;
             text-align: center;
             padding: 100px 20px;
             position: relative;
             overflow: hidden;
             z-index: 10;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #6f3ef2;
         }
 
         .hero-section::before {
@@ -75,7 +75,7 @@ if (empty($telegram_raw)) {
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://source.unsplash.com/random/1920x1080/?gold,dark') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1920x1080/?purple,dark') no-repeat center center/cover;
             opacity: 0.15;
             z-index: 0;
         }
@@ -86,8 +86,8 @@ if (empty($telegram_raw)) {
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            color: #d4af37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            color: #6f3ef2;
+            text-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
         }
 
         .hero-section p {
@@ -110,7 +110,7 @@ if (empty($telegram_raw)) {
         .section-title {
             font-size: 36px;
             font-weight: 600;
-            color: #d4af37;
+            color: #6f3ef2;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -126,7 +126,7 @@ if (empty($telegram_raw)) {
         .contact-content h2 {
             font-size: 24px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin: 30px 0 15px;
             text-align: left;
         }
@@ -159,7 +159,7 @@ if (empty($telegram_raw)) {
             content: '\f058';
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
-            color: #ffd700;
+            color: #6f3ef2;
             position: absolute;
             left: 0;
             top: 2px;
@@ -171,7 +171,7 @@ if (empty($telegram_raw)) {
         }
 
         .contact-info p a {
-            color: #ffd700;
+            color: #6f3ef2;
             text-decoration: none;
         }
 
@@ -182,25 +182,25 @@ if (empty($telegram_raw)) {
         /* CTA Banner */
         .cta-banner {
             background: linear-gradient(135deg, #1a1a1a, #000000);
-            border: 1px solid #d4af37;
+            border: 1px solid #6f3ef2;
             color: #fff;
             text-align: center;
             padding: 60px 20px;
             border-radius: 15px;
             margin: 40px 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 20px rgba(111, 62, 242, 0.2);
         }
 
         .cta-banner h2 {
             font-size: 32px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
         .cta-banner .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: 700;
@@ -211,15 +211,15 @@ if (empty($telegram_raw)) {
         }
 
         .cta-banner .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Button Styles */
         .signup-link .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -231,9 +231,9 @@ if (empty($telegram_raw)) {
         }
 
         .signup-link .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Notice Popup */
@@ -243,7 +243,7 @@ if (empty($telegram_raw)) {
             left: 50%;
             transform: translate(-50%, -50%);
             background: #141414;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
             padding: 30px;
@@ -256,7 +256,7 @@ if (empty($telegram_raw)) {
 
         .notice h2 {
             font-size: 24px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 15px;
         }
 
@@ -278,12 +278,12 @@ if (empty($telegram_raw)) {
         }
 
         .close-btn:hover {
-            color: #ffd700;
+            color: #6f3ef2;
         }
 
         .notice .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -294,9 +294,9 @@ if (empty($telegram_raw)) {
         }
 
         .notice .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Responsive Design */
@@ -392,7 +392,7 @@ if (empty($telegram_raw)) {
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Contact Illuminate Tube</h1>
+        <h1>Contact PocketApp Tube</h1>
         <p>Reach out to our 24/7 elite support team via Telegram for help with your account, vault access, or general inquiries!</p>
     </section>
 
@@ -401,7 +401,7 @@ if (empty($telegram_raw)) {
         <h2 class="section-title">Get in Touch</h2>
         <div class="contact-content">
             <p>
-                We're here to assist you with any questions or issues you may have! At Illuminate Tube, our dedicated support team is available 24/7. Whether you need help with your initiate account, access code issues, or reward payout inquiries, feel free to reach out.
+                We're here to assist you with any questions or issues you may have! At PocketApp Tube, our dedicated support team is available 24/7. Whether you need help with your initiate account, access code issues, or reward payout inquiries, feel free to reach out.
             </p>
 
             <div class="contact-info">
@@ -444,7 +444,7 @@ if (empty($telegram_raw)) {
     <!-- Notice Popup -->
     <div class="notice" id="notice">
         <span class="close-btn" onclick="closeNotice()" aria-label="Close notice">×</span>
-        <h2>Contact Illuminate Tube</h2>
+        <h2>Contact PocketApp Tube</h2>
         <p>Need assistance? Our support team is here to help you 24/7 via Telegram. Reach out today to get started or resolve any issues!</p>
         <a href="https://t.me/<?php echo $telegram_clean; ?>" class="btn" onclick="openTelegram(event, 'https://t.me/<?php echo $telegram_clean; ?>')">
             Message Us
