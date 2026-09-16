@@ -7,10 +7,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Illuminate Tube, the elite platform where you can watch exclusive Illuminati videos and earn rewards. Explore our mission and join the elite.">
-    <meta name="keywords" content="Illuminate Tube, Illuminati videos, earn money online, secret archives, elite rewards, crypto payouts">
-    <meta name="author" content="Illuminate Tube">
-    <title>Illuminate Tube - About Us</title>
+    <meta name="description" content="Discover PocketApp Tube, the elite platform where you can watch exclusive videos and earn rewards. Explore our mission and join the elite.">
+    <meta name="keywords" content="PocketApp Tube, secret videos, earn money online, secret archives, elite rewards, crypto payouts">
+    <meta name="author" content="PocketApp Tube">
+    <title>PocketApp Tube - About Us</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -35,13 +35,13 @@
         /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #000000, #1a1a1a);
-            color: #ffd700;
+            color: #6f3ef2;
             text-align: center;
             padding: 100px 20px;
             position: relative;
             overflow: hidden;
             z-index: 10;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #6f3ef2;
         }
 
         .hero-section::before {
@@ -51,7 +51,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://source.unsplash.com/random/1920x1080/?gold,dark') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1920x1080/?purple,dark') no-repeat center center/cover;
             opacity: 0.15;
             z-index: 0;
         }
@@ -62,8 +62,8 @@
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            color: #d4af37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            color: #6f3ef2;
+            text-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
         }
 
         .hero-section p {
@@ -86,7 +86,7 @@
         .section-title {
             font-size: 36px;
             font-weight: 600;
-            color: #d4af37;
+            color: #6f3ef2;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -102,7 +102,7 @@
         .about-content h2 {
             font-size: 24px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin: 30px 0 15px;
             text-align: left;
         }
@@ -135,7 +135,7 @@
             content: '\f058';
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
-            color: #ffd700;
+            color: #6f3ef2;
             position: absolute;
             left: 0;
             top: 2px;
@@ -144,25 +144,25 @@
         /* CTA Banner */
         .cta-banner {
             background: linear-gradient(135deg, #1a1a1a, #000000);
-            border: 1px solid #d4af37;
+            border: 1px solid #6f3ef2;
             color: #fff;
             text-align: center;
             padding: 60px 20px;
             border-radius: 15px;
             margin: 40px 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 20px rgba(111, 62, 242, 0.2);
         }
 
         .cta-banner h2 {
             font-size: 32px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
         .cta-banner .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: 700;
@@ -173,15 +173,15 @@
         }
 
         .cta-banner .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Button Styles */
         .signup-link .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -193,9 +193,9 @@
         }
 
         .signup-link .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Notice Popup */
@@ -205,7 +205,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #141414;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
             padding: 30px;
@@ -218,7 +218,7 @@
 
         .notice h2 {
             font-size: 24px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 15px;
         }
 
@@ -240,12 +240,12 @@
         }
 
         .close-btn:hover {
-            color: #ffd700;
+            color: #6f3ef2;
         }
 
         .notice .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 12px 30px;
             font-size: 16px;
             font-weight: 700;
@@ -256,9 +256,9 @@
         }
 
         .notice .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Responsive Design */
@@ -354,50 +354,50 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>About Illuminate Tube</h1>
-        <p>Discover how Illuminate Tube connects you to secret archives and exclusive Illuminati-related media while granting you elite rewards.</p>
+        <h1>About PocketApp Tube</h1>
+        <p>Discover how PocketApp Tube connects you to secret archives and exclusive media while granting you elite rewards.</p>
     </section>
 
     <!-- About Content -->
     <div class="index-container">
         <h2 class="section-title">Who We Are</h2>
         <div class="about-content">
-            <h2>Welcome to Illuminate Tube</h2>
+            <h2>Welcome to PocketApp Tube</h2>
             <p>
-                Illuminate Tube is an exclusive digital platform created to redefine video viewing and financial enlightenment. Rather than wasting hours on ordinary streaming, Illuminate Tube offers you direct access to fascinating Illuminati archives, historical lore, and hidden knowledge—all while rewarding you for your viewing time.
+                PocketApp Tube is an exclusive digital platform created to redefine video viewing and financial enlightenment. Rather than wasting hours on ordinary streaming, PocketApp Tube offers you direct access to fascinating archives, historical lore, and hidden knowledge—all while rewarding you for your viewing time.
             </p>
             <p>
-                Powered by a high-tier blockchain security framework, Illuminate Tube lets members unlock elite earnings through dedicated participation. Whether you are seeking deeper insight or building passive wealth, our sanctuary gives you a prestigious path to claim digital rewards.
+                Powered by a high-tier blockchain security framework, PocketApp Tube lets members unlock elite earnings through dedicated participation. Whether you are seeking deeper insight or building passive wealth, our sanctuary gives you a prestigious path to claim digital rewards.
             </p>
 
             <h2>Our Mission</h2>
             <p>
-                At Illuminate Tube, our mission is to empower initiates across the globe through secret knowledge and financial prosperity. We bridge the gap between intriguing secret content and decentralized finance, providing a transparent, elite, and seamless system where enlightenment translates into direct value.
+                At PocketApp Tube, our mission is to empower initiates across the globe through secret knowledge and financial prosperity. We bridge the gap between intriguing secret content and decentralized finance, providing a transparent, elite, and seamless system where enlightenment translates into direct value.
             </p>
 
             <h2>How It Works</h2>
             <p>
-                Embarking on your journey with Illuminate Tube is straightforward:
+                Embarking on your journey with PocketApp Tube is straightforward:
             </p>
             <ul>
                 <li><strong>Initiate Access:</strong> Create your profile in moments and set up your private 5-digit passcode.</li>
-                <li><strong>Watch Secret Videos:</strong> Stream exclusive Illuminati documentaries, hidden archives, and mysterious videos.</li>
+                <li><strong>Watch Secret Videos:</strong> Stream exclusive documentaries, hidden archives, and mysterious videos.</li>
                 <li><strong>Earn Rewards:</strong> Receive payout credits directly into your vault for every video watched.</li>
                 <li><strong>Claim Payouts:</strong> Withdraw your earned wealth securely through our crypto-backed payout network.</li>
             </ul>
 
-            <h2>Why Choose Illuminate Tube?</h2>
+            <h2>Why Choose PocketApp Tube?</h2>
             <p>
-                Illuminate Tube stands as a premier destination for knowledge seekers and earners alike due to our unique offerings:
+                PocketApp Tube stands as a premier destination for knowledge seekers and earners alike due to our unique offerings:
             </p>
             <ul>
-                <li><strong>Exclusive Content:</strong> Access rare and captivating Illuminati archives unavailable on conventional platforms.</li>
+                <li><strong>Exclusive Content:</strong> Access rare and captivating archives unavailable on conventional platforms.</li>
                 <li><strong>High Earning Potential:</strong> Elevate your status and unlock substantial payout rates as an active member.</li>
                 <li><strong>Encrypted & Safe:</strong> Advanced crypto encryption guarantees fast, private, and trustworthy reward transactions.</li>
                 <li><strong>Global Circle:</strong> Available worldwide to all who seek enlightenment and passive wealth creation.</li>
             </ul>
             <p>
-                Join thousands of initiates who are transforming their screen time into wealth and discovery with Illuminate Tube.
+                Join thousands of initiates who are transforming their screen time into wealth and discovery with PocketApp Tube.
             </p>
             <p class="signup-link">
                 Ready to enter the circle? <a href="register.php" class="btn">Sign Up Now</a>
@@ -407,14 +407,14 @@
 
     <!-- CTA Banner -->
     <section class="cta-banner">
-        <h2>Join Illuminate Tube Today</h2>
+        <h2>Join PocketApp Tube Today</h2>
         <a href="register.php" class="btn" onclick="console.log('CTA button clicked')">Start Earning Now</a>
     </section>
 
     <!-- Notice Popup -->
     <div class="notice" id="notice">
         <span class="close-btn" onclick="closeNotice()" aria-label="Close notice">×</span>
-        <h2>Enter Illuminate Tube</h2>
+        <h2>Enter PocketApp Tube</h2>
         <p>Unlock secret video archives and earn premium crypto rewards today. Register now and join the elite!</p>
         <a href="register.php" class="btn" onclick="console.log('Notice button clicked')">Get Started</a>
     </div>
