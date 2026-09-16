@@ -8,10 +8,10 @@ session_start(); // Start session to check user login status
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unlock exclusive rewards by watching Illuminati secret archives and elite videos with Illuminate Tube. Join our elite platform today!">
-    <meta name="keywords" content="Illuminate Tube, Illuminati videos, watch and earn, secret knowledge, elite rewards, crypto earnings">
-    <meta name="author" content="Illuminate Tube">
-    <title>Illuminate Tube - Unlock Rewards Watching Exclusive Content</title>
+    <meta name="description" content="Unlock exclusive rewards by watching secret archives and elite videos with PocketApp Tube. Join our elite platform today!">
+    <meta name="keywords" content="PocketApp Tube, secret videos, watch and earn, secret knowledge, elite rewards, crypto earnings">
+    <meta name="author" content="PocketApp Tube">
+    <title>PocketApp Tube - Unlock Rewards Watching Exclusive Content</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -37,13 +37,13 @@ session_start(); // Start session to check user login status
         /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #000000, #1a1a1a);
-            color: #ffd700;
+            color: #6f3ef2;
             text-align: center;
             padding: 120px 20px;
             position: relative;
             overflow: hidden;
             z-index: 10;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #6f3ef2;
         }
 
         .hero-section::before {
@@ -53,7 +53,7 @@ session_start(); // Start session to check user login status
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://source.unsplash.com/random/1920x1080/?gold,dark') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1920x1080/?purple,dark') no-repeat center center/cover;
             opacity: 0.15;
             z-index: 0;
         }
@@ -64,8 +64,8 @@ session_start(); // Start session to check user login status
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            color: #d4af37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            color: #6f3ef2;
+            text-shadow: 0 0 10px rgba(111, 62, 242, 0.3);
             animation: fadeInDown 1s ease-out;
         }
 
@@ -102,29 +102,29 @@ session_start(); // Start session to check user login status
         }
 
         .btn-register, .btn-dashboard {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             border: none;
             font-weight: 700;
         }
 
         .btn-register:hover, .btn-dashboard:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         .btn-signin {
             background-color: transparent;
-            color: #ffd700;
-            border: 2px solid #d4af37;
+            color: #6f3ef2;
+            border: 2px solid #6f3ef2;
         }
 
         .btn-signin:hover {
-            background-color: #d4af37;
-            color: #000;
+            background-color: #6f3ef2;
+            color: #fff;
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Main Container */
@@ -137,7 +137,7 @@ session_start(); // Start session to check user login status
         .section-title {
             font-size: 36px;
             font-weight: 600;
-            color: #d4af37;
+            color: #6f3ef2;
             text-align: center;
             margin-bottom: 40px;
             animation: fadeIn 1s ease-out;
@@ -166,12 +166,12 @@ session_start(); // Start session to check user login status
 
         .step-card:hover {
             transform: translateY(-10px);
-            border-color: #d4af37;
+            border-color: #6f3ef2;
         }
 
         .step-card i {
             font-size: 36px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
@@ -208,12 +208,12 @@ session_start(); // Start session to check user login status
 
         .feature-card:hover {
             transform: translateY(-10px);
-            border-color: #d4af37;
+            border-color: #6f3ef2;
         }
 
         .feature-card i {
             font-size: 40px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
@@ -258,7 +258,7 @@ session_start(); // Start session to check user login status
         .stat-card h3 {
             font-size: 36px;
             font-weight: 700;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 10px;
         }
 
@@ -297,7 +297,7 @@ session_start(); // Start session to check user login status
             border-radius: 50%;
             margin: 0 auto 15px;
             object-fit: cover;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
         }
 
         .testimonial-card p {
@@ -310,7 +310,7 @@ session_start(); // Start session to check user login status
         .testimonial-card h4 {
             font-size: 18px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
         }
 
         .testimonial-card span {
@@ -339,7 +339,7 @@ session_start(); // Start session to check user login status
         .faq-item h3 {
             font-size: 18px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             padding: 20px;
             margin: 0;
             cursor: pointer;
@@ -374,25 +374,25 @@ session_start(); // Start session to check user login status
         /* CTA Banner */
         .cta-banner {
             background: linear-gradient(135deg, #1a1a1a, #000000);
-            border: 1px solid #d4af37;
+            border: 1px solid #6f3ef2;
             color: #fff;
             text-align: center;
             padding: 60px 20px;
             border-radius: 15px;
             margin: 40px 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 20px rgba(111, 62, 242, 0.2);
         }
 
         .cta-banner h2 {
             font-size: 32px;
             font-weight: 600;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 20px;
         }
 
         .cta-banner .btn {
-            background: linear-gradient(45deg, #d4af37, #ffd700);
-            color: #000;
+            background: linear-gradient(45deg, #5b2bd9, #6f3ef2);
+            color: #fff;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: 700;
@@ -401,9 +401,9 @@ session_start(); // Start session to check user login status
         }
 
         .cta-banner .btn:hover {
-            background: linear-gradient(45deg, #ffd700, #b8860b);
+            background: linear-gradient(45deg, #6f3ef2, #4a1eb8);
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 15px rgba(111, 62, 242, 0.5);
         }
 
         /* Notice Popup */
@@ -413,7 +413,7 @@ session_start(); // Start session to check user login status
             left: 50%;
             transform: translate(-50%, -50%);
             background: #141414;
-            border: 2px solid #d4af37;
+            border: 2px solid #6f3ef2;
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
             padding: 30px;
@@ -426,7 +426,7 @@ session_start(); // Start session to check user login status
 
         .notice h2 {
             font-size: 24px;
-            color: #ffd700;
+            color: #6f3ef2;
             margin-bottom: 15px;
         }
 
@@ -448,7 +448,7 @@ session_start(); // Start session to check user login status
         }
 
         .close-btn:hover {
-            color: #ffd700;
+            color: #6f3ef2;
         }
 
         /* Animations */
@@ -585,8 +585,8 @@ session_start(); // Start session to check user login status
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Unlock Wealth with Illuminate Tube</h1>
-        <p>Step into the circle of enlightenment. Watch exclusive Illuminati-related videos and secret archives to unlock high-tier monetary rewards and passive wealth!</p>
+        <h1>Unlock Wealth with PocketApp Tube</h1>
+        <p>Step into the circle of enlightenment. Watch exclusive videos and secret archives to unlock high-tier monetary rewards and passive wealth!</p>
         <div class="button-group">
             <?php if (isset($_SESSION['user_id'])): ?>
                 <a href="users/home.php" class="btn btn-dashboard" onclick="console.log('Dashboard button clicked')">Dashboard</a>
@@ -599,7 +599,7 @@ session_start(); // Start session to check user login status
 
     <!-- How It Works Section -->
     <div class="index-container how-it-works">
-        <h2 class="section-title">How Illuminate Tube Works</h2>
+        <h2 class="section-title">How PocketApp Tube Works</h2>
         <div class="steps">
             <div class="step-card">
                 <i class="fas fa-eye"></i>
@@ -609,7 +609,7 @@ session_start(); // Start session to check user login status
             <div class="step-card">
                 <i class="fas fa-film"></i>
                 <h3>2. Watch Secret Content</h3>
-                <p>Explore a collection of Illuminati-related videos, documentary archives, and hidden lore to earn rewards.</p>
+                <p>Explore a collection of exclusive videos, documentary archives, and hidden lore to earn rewards.</p>
             </div>
             <div class="step-card">
                 <i class="fas fa-coins"></i>
@@ -621,12 +621,12 @@ session_start(); // Start session to check user login status
 
     <!-- Features Section -->
     <div class="index-container">
-        <h2 class="section-title">Why Join Illuminate Tube?</h2>
+        <h2 class="section-title">Why Join PocketApp Tube?</h2>
         <div class="features">
             <div class="feature-card">
                 <i class="fas fa-crown"></i>
                 <h3>Elite Reward Rates</h3>
-                <p>Unlock lucrative earnings by viewing rare, high-value Illuminati content with optimal stream performance.</p>
+                <p>Unlock lucrative earnings by viewing rare, high-value content with optimal stream performance.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-gem"></i>
@@ -641,7 +641,7 @@ session_start(); // Start session to check user login status
             <div class="feature-card">
                 <i class="fas fa-headset"></i>
                 <h3>Dedicated Concierge</h3>
-                <p>Enjoy round-the-clock member support via LiveChat or our <a href="contact.php" style="color: #ffd700;">Contact page</a>.</p>
+                <p>Enjoy round-the-clock member support via LiveChat or our <a href="contact.php" style="color: #6f3ef2;">Contact page</a>.</p>
             </div>
         </div>
     </div>
@@ -671,13 +671,13 @@ session_start(); // Start session to check user login status
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah M.">
-                <p>"Illuminate Tube granted me access to incredible content while generating solid daily rewards!"</p>
+                <p>"PocketApp Tube granted me access to incredible content while generating solid daily rewards!"</p>
                 <h4>Sarah M.</h4>
                 <span>Initiate Member</span>
             </div>
             <div class="testimonial-card">
                 <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="James K.">
-                <p>"The best platform for unique illuminati videos and instant reward transfers. Highly recommended!"</p>
+                <p>"The best platform for unique videos and instant reward transfers. Highly recommended!"</p>
                 <h4>James K.</h4>
                 <span>Gold Tier User</span>
             </div>
@@ -695,8 +695,8 @@ session_start(); // Start session to check user login status
         <h2 class="section-title">Frequently Asked Questions</h2>
         <div class="faq-grid">
             <div class="faq-item">
-                <h3>How do I start earning with Illuminate Tube?</h3>
-                <p>Sign up using your email and passcode, log into the portal, and begin watching Illuminati-related videos to claim rewards instantly.</p>
+                <h3>How do I start earning with PocketApp Tube?</h3>
+                <p>Sign up using your email and passcode, log into the portal, and begin watching videos to claim rewards instantly.</p>
             </div>
             <div class="faq-item">
                 <h3>What is required to join?</h3>
@@ -707,8 +707,8 @@ session_start(); // Start session to check user login status
                 <p>Rewards are processed through our encrypted payout pipeline straight to your preferred wallet address.</p>
             </div>
             <div class="faq-item">
-                <h3>Is Illuminate Tube secure?</h3>
-                <p>We maintain end-to-end security protocol to shield user activity. Review our <a href="privacy.php" style="color: #ffd700;">Privacy Policy</a> for full details.</p>
+                <h3>Is PocketApp Tube secure?</h3>
+                <p>We maintain end-to-end security protocol to shield user activity. Review our <a href="privacy.php" style="color: #6f3ef2;">Privacy Policy</a> for full details.</p>
             </div>
         </div>
     </div>
@@ -719,15 +719,15 @@ session_start(); // Start session to check user login status
         <?php if (isset($_SESSION['user_id'])): ?>
             <a href="users/home.php" class="btn" onclick="console.log('Dashboard CTA clicked')">Go to Dashboard</a>
         <?php else: ?>
-            <a href="register.php" class="btn" onclick="console.log('CTA button clicked')">Join Illuminate Tube Now</a>
+            <a href="register.php" class="btn" onclick="console.log('CTA button clicked')">Join PocketApp Tube Now</a>
         <?php endif; ?>
     </section>
 
     <!-- Notice Popup -->
     <div class="notice" id="notice">
         <span class="close-btn" onclick="closeNotice()" aria-label="Close notice">×</span>
-        <h2>Welcome to Illuminate Tube</h2>
-        <p>Unlock access to Illuminati secret videos and earn premium rewards today. Enter the portal now!</p>
+        <h2>Welcome to PocketApp Tube</h2>
+        <p>Unlock access to secret videos and earn premium rewards today. Enter the portal now!</p>
         <?php if (isset($_SESSION['user_id'])): ?>
             <a href="users/home.php" class="btn btn-dashboard" onclick="console.log('Notice dashboard clicked')">Go to Dashboard</a>
         <?php else: ?>
