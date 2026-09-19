@@ -183,8 +183,8 @@ if (!empty($channel) && !empty($bank_name) && !empty($bank_account) && $amount >
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Withdrawal receipt for your Illuminate Tube withdrawal." />
-    <title>Withdrawal Receipt | Illuminate Tube</title>
+    <meta name="description" content="Withdrawal receipt for your PocketApp Tube withdrawal." />
+    <title>Withdrawal Receipt | PocketApp Tube</title>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&family=Libre+Barcode+128&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -671,8 +671,8 @@ if (!empty($channel) && !empty($bank_name) && !empty($bank_account) && $amount >
             <?php else: ?>
                 <div class="receipt-paper">
                     <div class="receipt-header">
-                        <img src="img/top.png" alt="Illuminate Tube Logo">
-                        <h1>Illuminate Tube</h1>
+                        <img src="img/top.png" alt="PocketApp Tube Logo">
+                        <h1>PocketApp Tube</h1>
                         <p>Official Transaction Receipt</p>
                     </div>
 
@@ -752,7 +752,7 @@ if (!empty($channel) && !empty($bank_name) && !empty($bank_account) && $amount >
                     </div>
 
                     <div class="receipt-footer-msg">
-                        Thank you for using Illuminate Tube!
+                        Thank you for using PocketApp Tube!
                     </div>
                 </div>
 
